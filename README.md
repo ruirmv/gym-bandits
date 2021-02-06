@@ -1,2 +1,4 @@
 # gym-bandits
-A multi-armed bandits implementation
+The [Multi-Armed Bandits Domain](https://github.com/ruirmv/gym-bandits) is a single-agent stateless environment with k actions.
+
+
