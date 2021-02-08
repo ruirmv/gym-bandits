@@ -20,7 +20,7 @@ class BanditsEnv(gym.Env):
     metadata = {'render.modes': ['human']}
     
     def __init__(self, bandits=10):
-        self._mean = 1
+        self._mean = 0
         self._standard_deviation = 1
         self._standard_deviation_reward = 1
         self._bandits = bandits
@@ -61,3 +61,6 @@ class BanditsEnv(gym.Env):
     
     def close(self):
         raise NotImplemented
+    
+    def get_values(self):
+        return self._expected_rewards.copy()
