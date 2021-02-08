@@ -12,3 +12,15 @@ pip install -e .
 ### Creating Instance of Environment
 
 After installation, you can create an instance of the environment with ```gym.make('gym_bandits:bandits-v0')```
+
+# Agents
+
+The following agents are provided to make experiments with the environment:
+<ul>
+    <li>Greedy</li>
+    <li>Epsilon Greedy</li>
+    <li>UCB</li>
+    <li>Gradient Bandit</li>
+</ul>
+
+The implementations follow the same book.
